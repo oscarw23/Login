@@ -41,23 +41,23 @@
                 <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
                     <!--formulario de registro-->
                     <h2>REGISTRARSE</h2>
-                    <input type="text" placeholder="Nombre" name="Nombre"/>
-                    <input type="text" placeholder="Apellido" name="Apellido" />
+                    <input type="text" placeholder="Nombre" name="Nombre" require="Completa este campo"required="Completa este campo" pattern="[a-zA-Z]+"   />
+                    <input type="text" placeholder="Apellido" name="Apellido"require="Completa este campo"required="Completa este campo" pattern="[a-zA-Z]+/">
                     <p>Seleccione un tipo de documento: </p>
-                    <select name="tipo_documento" >
+                    <select name="tipo_documento" required="Completa este campo" >
                         <option selected value="0" text-align="left"> Elige una opción </option>
                         <option value="1">Cedula</option>
                         <option value="2">Tarjeta de identidad</option>
                         <option value="3">Cedula extranjera</option>
                     </select>
-                    <input type="number" placeholder="Ingresa tu número de cedula" name="num_cedula" />
+                    <input type="number" placeholder="Ingresa tu número de cedula" name="num_cedula" required="Completa este campo"/>
                     <p>Ingresa tu fecha de nacimiento </p>
-                    <input type="date" placeholder="Ingresa tu fecha de naciemiento" name="date"/>
-                    <input type="text" placeholder="Ciudad de nacimiento" name="ciudadN"/>
-                    <input type="number" placeholder="Ingresa tu número de telefono"name="Telefono" />
-                    <input type="text" placeholder="Correo Electrónico" name="Correo"/>
-                    <input type="text" placeholder="Usuario" name="Usuario" />
-                    <input type="password" placeholder="Ingresa una contraseña" name="Contrasena"/>
+                    <input type="date" placeholder="Ingresa tu fecha de naciemiento" name="date" required="Completa este campo"/>
+                    <input type="text" placeholder="Ciudad de nacimiento" name="ciudadN" required="Completa este campo" pattern="[a-zA-Z]+"/>
+                    <input type="number" placeholder="Ingresa tu número de telefono"name="Telefono" required="Completa este campo"/>
+                    <input type="text" placeholder="Correo Electrónico" name="Correo"required="Completa este campo"/>
+                    <input type="text" placeholder="Usuario" name="Usuario" required="Completa este campo"/>
+                    <input type="password" placeholder="Ingresa una contraseña" name="Contrasena" required="Completa este campo"/>
                     <button>Registrarse</button>
                 </form>
             </div>
